@@ -146,6 +146,12 @@ html {
   letter-spacing: 0.5px;
 }
 
+.section-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
@@ -732,7 +738,7 @@ html {
 }
 
 .product-card .product-price {
-  background: var(--saffron);
+  background: var(--pink);
   height: 60px;
   width:  60px;
   display:         flex;

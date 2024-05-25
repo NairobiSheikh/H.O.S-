@@ -32,7 +32,10 @@
 
   }
 
-
+  /* .img-box-map{
+    width: 358px;
+    height: 350px;
+  } */
 
   /**
    * HOME 
@@ -86,18 +89,22 @@
 
 
   /**
-   * HEADER, HOME, ABOUT, SERVICES, PRODUCTS, TESTIMONIALS, FOOTER
+   * HEADER, HOME, catering, SERVICES, PRODUCTS, TESTIMONIALS, FOOTER
    */
 
   .navbar-wrapper,
   .home,
-  .about,
+  .catering,
   .services,
   .product,
   .testimonials,
   .footer-wrapper {
     max-width: var(--mw);
     margin-inline: auto;
+  }
+  .img-box-map{
+    width: 358px;
+    height: 450px;
   }
 
 }
@@ -171,10 +178,10 @@
 
 
   /**
-   * ABOUT 
+   * catering 
    */
 
-  .about-left .img-box { aspect-ratio: 5 / 3; }
+  .catering-left .img-box { aspect-ratio: 5 / 3; }
 
 
 
@@ -296,17 +303,17 @@
 
 
   /**
-   * ABOUT 
+   * catering 
    */
 
-  .about {
+  .catering {
     grid-template-columns: 3fr 4fr;
     gap: 80px;
     align-items: center;
     padding: var(--py) var(px) 120px;
   }
 
-  .about-left .img-box { aspect-ratio: auto; }
+  .catering-left .img-box { aspect-ratio: auto; }
 
   .shape-7 {
     top:   80%;

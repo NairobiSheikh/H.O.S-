@@ -1,26 +1,17 @@
 // 'use strict';
-
-
 // navbar variables
 const nav = document.querySelector('.navbar-nav');
 const navLinks = document.querySelectorAll('.nav-link');
 const cartToggleBtn = document.querySelector('.shopping-cart-btn');
 const navToggleBtn = document.querySelector('.menu-toggle-btn');
 const shoppingCart = document.querySelector('.cart-box');
-
-
-
 // nav toggle function
 const navToggleFunc = function () {
   nav.classList.toggle('active');
   navToggleBtn.classList.toggle('active');
-}
-
+};
 // shopping cart toggle function
-const cartToggleFunc = function () { shoppingCart.classList.toggle('active') }
-
-
-
+const cartToggleFunc = function () { shoppingCart.classList.toggle('active'); };
 // add event on nav-toggle-btn
 navToggleBtn.addEventListener('click', function () {
 
@@ -30,7 +21,6 @@ navToggleBtn.addEventListener('click', function () {
   navToggleFunc();
 
 });
-
 // add event on cart-toggle-btn
 cartToggleBtn.addEventListener('click', function () {
 
@@ -40,7 +30,6 @@ cartToggleBtn.addEventListener('click', function () {
   cartToggleFunc();
 
 });
-
 // add event on all nav-link
 for (let i = 0; i < navLinks.length; i++) {
 

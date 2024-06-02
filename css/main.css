@@ -80,6 +80,17 @@ html{
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-track { background: var(--space-cadet); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--pink-light-dark);
+}
+
+::-webkit-scrollbar-thumb:hover { background: var(--pink); }
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   --title-color: #F1F3F2;
@@ -276,6 +287,7 @@ img{
 .home__title{
   font-size: var(--h1-font-size);
   color: var(--pink-light-dark);
+  margin-top: var(--mt-4);
   margin-bottom: var(--mb-1);
 }
 
@@ -436,7 +448,7 @@ img{
 
 .footer__logo{
   font-size: var(--h3-font-size);
-  color: var(--first-color);
+  color: var(--pink-light-dark);
   font-weight: var(--font-semi-bold);
 }
 
@@ -465,7 +477,7 @@ img{
 }
 
 .footer__link:hover{
-  color: var(--first-color);
+  color: var(--pink-light-dark);
 }
 
 .footer__copy{

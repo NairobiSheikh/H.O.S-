@@ -316,17 +316,17 @@ img{
   background-color: var(--pink);
 }
 
-/*========== ABOUT ==========*/
-.about__data{
+/*========== CURBSIDE ==========*/
+.ordering__data{
   text-align: center;
 }
 
-.about__description{
+.ordering__description{
   margin-bottom: var(--mb-3);
   color: var(--pink-light-dark);
 }
 
-.about__img{
+.ordering__img{
   width: 580px;
   height: 45rem;
   border-radius: .5rem;
@@ -408,26 +408,20 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
-/*========== APP ==========*/
-.app__data{
+/*========== ABOUT ==========*/
+.about__data{
   text-align: center;
 }
 
-.app__description{
-  margin-bottom: var(--mb-5);
+.about__description{
+  margin-bottom: var(--mb-3);
+  color: var(--pink-light-dark);
 }
 
-.app__stores{
-  margin-bottom: var(--mb-4);
-}
-
-.app__store{
-  width: 120px;
-  margin: 0 var(--mb-1);
-}
-
-.app__img{
-  width: 230px;
+.about__img{
+  width: 580px;
+  height: 45rem;
+  border-radius: .5rem;
   justify-self: center;
 }
 
@@ -496,7 +490,7 @@ img{
     align-items: center;
   }
 
-  .about__data, .about__initial,
+  .about__data, .about__initial,.ordering__initial,
   .app__data, .app__initial,
   .contact__container, .contact__initial{
     text-align: initial;
@@ -580,7 +574,7 @@ img{
     width: 500px;
   }
 
-  .about__container,
+  .about__container,.ordering__container,
   .app__container{
     column-gap: 7rem;
   }

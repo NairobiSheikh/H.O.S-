@@ -93,8 +93,8 @@ html{
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
+  /* --title-color: #F1F3F2; */
+  /* --text-color: #C7D1CC; */
   --body-color: var(--space-cadet);
   --container-color: var(--space-cadet);
 }
@@ -110,16 +110,23 @@ body.dark-theme{
 }
 
 body{
+  background: url(/img/mainwing.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
+  /* background-color: var(--body-color); */
+  /* color: var(--text-color); */
+  color: var(--white);
   line-height: 1.6;
 }
 
 h1,h2,h3,p,ul{
   margin: 0;
+  color: var(--white);
 }
 
 ul{
@@ -147,7 +154,7 @@ img{
 
 .section-title{
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--white);
   margin-bottom: var(--mb-3);
 }
 
@@ -268,7 +275,7 @@ img{
 
 .scrolltop__icon{
   font-size: 1.8rem;
-  color: var(--body-color);
+  color: var(--white);
 }
 
 /* Show scrolltop */
@@ -293,7 +300,7 @@ img{
 
 .home__subtitle{
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: var(--white);
   margin-bottom: var(--mb-4);
 }
 
@@ -302,11 +309,15 @@ img{
   justify-self: center;
 }
 
+.main__img{
+  width: 900;
+}
+
 /*========== BUTTONS ==========*/
 .button{
   display: inline-block;
   background-color: var(--pink-light-dark);
-  color: #FFF;
+  color: var(--white);
   padding: .75rem 1rem;
   border-radius: .5rem;
   transition: .3s;
@@ -319,6 +330,7 @@ img{
 /*========== CURBSIDE ==========*/
 .ordering__data{
   text-align: center;
+  background-color: var(--space-cadet);
 }
 
 .ordering__description{
@@ -352,7 +364,7 @@ img{
 
 .services__title{
   font-size: var(--h3-font-size);
-  color: var(--title-color);
+  color: var(--white);
   margin-bottom: var(--mb-1);
 }
 
@@ -384,7 +396,7 @@ img{
 
 .menu__name, .menu__preci{
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: var(--white);
 }
 
 .menu__name{
@@ -411,6 +423,8 @@ img{
 /*========== ABOUT ==========*/
 .about__data{
   text-align: center;
+  background-color: var(--space-cadet);
+  box-shadow: 0 2px 4px var(--pink-light-dark);
 }
 
 .about__description{
@@ -428,6 +442,7 @@ img{
 /*========== CONTACT ==========*/
 .contact__container{
   text-align: center;
+  background-color: var(--space-cadet);
 }
 
 .contact__description{
@@ -438,6 +453,7 @@ img{
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  background-color: var(--space-cadet);
 }
 
 .footer__logo{
@@ -454,19 +470,19 @@ img{
 
 .footer__social{
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--white);
   margin-right: var(--mb-2);
 }
 
 .footer__title{
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: var(--white);
   margin-bottom: var(--mb-2);
 }
 
 .footer__link{
   display: inline-block;
-  color: var(--text-color);
+  color: var(--white);
   margin-bottom: var(--mb-1);
 }
 
@@ -477,7 +493,7 @@ img{
 .footer__copy{
   text-align: center;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--white);
   margin-top: 3.5rem;
 }
 
